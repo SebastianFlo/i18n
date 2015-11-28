@@ -33,7 +33,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">translate</a>
+            <a class="navbar-brand" href="#/">{{ "APP_TITLE" | translate }}</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -42,6 +42,7 @@
               <li class="active"><a href="#/">Home</a></li>
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/">Contact</a></li>
+              <li><language-menu></language-menu></li>
             </ul>
           </div>
         </div>
@@ -85,6 +86,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/languagemenu.js"></script>
+        <script src="scripts/directives/languagemenu.js"></script>
         <!-- endbuild -->
 </body>
 </html>

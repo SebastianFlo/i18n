@@ -1,4 +1,5 @@
 {
       "APP_TITLE" : "Angular Oversætte Appen",
-      "INTRODUCTION_TEXT" : "Prove hvis den her ting virker" 
+      "INTRODUCTION_TEXT" : "Altid en fornaelse at voksne dine {{ count }} apps.",
+      "ANGULAR_VERSION" : "Angular versionen {{ version }}" 
 }

@@ -1,4 +1,5 @@
 {
       "APP_TITLE" : "Angular Translate App",
-      "INTRODUCTION_TEXT" : "Trying out how this thing works" 
+      "INTRODUCTION_TEXT" : "Always a pleasure scaffolding your {{ count }} apps.",
+      "ANGULAR_VERSION" : "Angular version {{ version }}" 
 }

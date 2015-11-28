@@ -1,5 +1,5 @@
 {
-      "APP_TITLE" : "Angular Translate App",
-      "INTRODUCTION_TEXT" : "Always a pleasure scaffolding your {{ count }} apps.",
-      "ANGULAR_VERSION" : "Angular version {{ version }}" 
+      "index.app_title" : "Angular Translate App",
+      "views.main.introduction_text" : "Always a pleasure scaffolding your {{ count }} apps.",
+      "views.main.angular_version" : "Angular version {{ version }}" 
 }

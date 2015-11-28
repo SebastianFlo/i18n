@@ -12,8 +12,16 @@ angular
   .module('translateApp', [
     'ngAnimate',
     'ngRoute',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'tmh.dynamicLocale'// angular-dynamic-locale
   ])
+  .constant('LOCALES', {
+    'locales': {
+        'da_dk': 'Danish',
+        'en_us': 'English'
+    },
+    'preferredLocale': 'en_US'
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -33,8 +41,11 @@ angular
   .config(function ($translateProvider) {
     // translate config code goes here
     
-    // file translations
     
+    //add errors
+    $translateProvider.useMissingTranslationHandlerLog();
+    
+    // file translations
     $translateProvider.useStaticFilesLoader({
         prefix: 'resources/lang-',// path to translations files
         suffix: '.json'// suffix, currently- extension of the translations
@@ -52,5 +63,8 @@ angular
     //   'INTRODUCTION_TEXT' : 'Trying out how this thing works'
     // });
     
-    $translateProvider.preferredLanguage('da');
-  });
+    $translateProvider.preferredLanguage('en');
+  })
+  .config(function (tmhDynamicLocaleProvider) {
+    tmhDynamicLocaleProvider.localeLocationPattern('bower_components/angular-i18n/angular-locale_{{locale}}.js');
+});

@@ -25,7 +25,7 @@ angular.module('translateApp')
     };
   
     
-    $translate('ANGULAR_VERSION', $scope.angularVersionData).then(function (angularVersion) {
+    $translate('views.main.angular_version', $scope.angularVersionData).then(function (angularVersion) {
       $scope.angularVersion = angularVersion;
   });
     

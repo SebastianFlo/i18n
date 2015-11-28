@@ -1,5 +1,5 @@
 {
-      "APP_TITLE" : "Angular Oversætte Appen",
-      "INTRODUCTION_TEXT" : "Altid en fornaelse at voksne dine {{ count }} apps.",
-      "ANGULAR_VERSION" : "Angular versionen {{ version }}" 
+      "index.app_title" : "Angular Oversætte Appen",
+      "views.main.introduction_text" : "Altid en fornaelse at voksne dine {{ count }} apps.",
+      "views.main.angular_version" : "Angular versionen {{ version }}" 
 }

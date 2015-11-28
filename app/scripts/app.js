@@ -11,7 +11,8 @@
 angular
   .module('translateApp', [
     'ngAnimate',
-    'ngRoute'
+    'ngRoute',
+    'pascalprecht.translate'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -28,4 +29,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .config(function ($translateProvider) {
+    // translate config code goes here
+  })

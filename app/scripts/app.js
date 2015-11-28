@@ -33,18 +33,24 @@ angular
   .config(function ($translateProvider) {
     // translate config code goes here
     
+    // file translations
+    
+    $translateProvider.useStaticFilesLoader({
+        prefix: 'resources/lang-',// path to translations files
+        suffix: '.json'// suffix, currently- extension of the translations
+    });
     
     //static translations
     
-    $translateProvider.translations('en', {
-      'APP_TITLE' : 'Angular Translate App',
-      'INTRODUCTION_TEXT' : 'Trying out how this thing works'
-    });
+    // $translateProvider.translations('en', {
+    //   'APP_TITLE' : 'Angular Translate App',
+    //   'INTRODUCTION_TEXT' : 'Trying out how this thing works'
+    // });
     
-    $translateProvider.translations('da', {
-      'APP_TITLE' : 'Angular Oversætte Appen',
-      'INTRODUCTION_TEXT' : 'Trying out how this thing works'
-    });
+    // $translateProvider.translations('da', {
+    //   'APP_TITLE' : 'Angular Oversætte Appen',
+    //   'INTRODUCTION_TEXT' : 'Trying out how this thing works'
+    // });
     
     $translateProvider.preferredLanguage('da');
   });
